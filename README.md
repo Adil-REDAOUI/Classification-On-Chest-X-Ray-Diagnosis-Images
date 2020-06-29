@@ -1,2 +1,5 @@
-# Classification-on-Diagnosis-Chest-X-Ray-Images
-Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning
+# Classification on Diagnosis Chest X-Ray Images
+Fixing some out of CUDA problems. 
+Working on progress.
+Data will be uploaded.
+
