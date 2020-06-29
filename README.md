@@ -1,5 +1,7 @@
 # Classification on Diagnosis Chest X-Ray Images
-Fixing some out of CUDA problems. 
+README section will be improved.
+
+Fixing some out of CUDA problems. (fixed with batch size of 4 lmao)
 
 Working on progress.
 
