@@ -46,7 +46,7 @@ def showData(col,row,train):
 if __name__=="__main__":
     
     EPOCHS = 10
-    BATCH_SIZE = 32
+    BATCH_SIZE = 8
     LEARNING_RATE = 0.003
     TRAIN_DATA_PATH = "/media/safak/Data/xray/train/"
     TEST_DATA_PATH = "/media/safak/Data/xray/test/"
