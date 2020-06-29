@@ -53,8 +53,9 @@ if __name__=="__main__":
     VAL_DATA_PATH = "/media/safak/Data/xray/val/"
     save_file_name = 'vgg16-chest-4.pt'
     checkpoint_path = 'vgg16-chest-4.pth'
-    #Statistics Based on ImageNet Data for Normalisation
     """
+    Statistics Based on ImageNet Data for Normalization
+    
     Data augmentation in image transformations
     """
     TRANSFORM_IMG = {
@@ -296,5 +297,29 @@ if __name__=="__main__":
     history = pd.DataFrame(
         history,
         columns=['train_loss', 'valid_loss', 'train_acc', 'valid_acc'])
+        eps = range(1,EPOCHS-1)
+    """
+    Visualizing results...
+    """
+    loss_train = history['train_loss']
+    loss_test = history['valid_loss']
+    acc_train = history['train_acc']
+    acc_valid = history['valid_acc']
+    fig = plt.figure(figsize=(15,15))
+    plt.plot(eps, loss_train, 'g', label='Training loss')
+    plt.plot(eps, loss_test, 'b', label='Validation loss')
+    plt.title('Training and Validation loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.show() 
+    fig = plt.figure(figsize=(15,15))
+    plt.plot(eps, acc_train, 'g', label='Training Accuracy')
+    plt.plot(eps, acc_valid, 'b', label='Validation Accuracy')
+    plt.title('Training and Validation loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.show()
     
     
