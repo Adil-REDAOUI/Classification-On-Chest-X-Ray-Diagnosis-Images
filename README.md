@@ -33,6 +33,10 @@ data:
     └── val
         ├── NORMAL
         └── PNEUMONIA
-## Samples From Dataset
+## Samples From Training Set and Class Frequency
+
+<img src="/im/samples.png" alt="drawing" width="400"/>
+
+
 
 
