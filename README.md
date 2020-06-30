@@ -27,21 +27,13 @@ data
 └── xray
 
     ├── test
-    
     │   ├── NORMAL
-    
     │   └── PNEUMONIA
-    
     ├── train
-    
     │   ├── NORMAL
-    
     │   └── PNEUMONIA
-    
     └── val
-    
         ├── NORMAL
-        
         └── PNEUMONIA
 
 
