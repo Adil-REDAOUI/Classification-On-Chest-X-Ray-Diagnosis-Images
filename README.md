@@ -108,7 +108,19 @@ ImageNet statistics are used for normalization and rezizing. For RGB values; mea
 
 ## Data Augmentation
 
-I use data augmetation methods in training set to reduce overfitting on image data via artificially enlarge the dataset using label-preserving transformations (Krizhevsky et al., 2012). I use torchvision.transforms.ColorJitter(brightness=0, contrast=0, saturation=0, hue=0) that randomly changes the brightness, contrast and saturation of an image, torchvision.transforms.RandomRotation(degrees=15) that rotates the image by angle, torchvision.transforms.RandomHorizontalFlip(p=0.5) that  orizontally flips the given image randomly with a given probability. 
+I use data augmetation methods in training set to reduce overfitting on image data via artificially enlarge the dataset using label-preserving transformations (Krizhevsky et al., 2012). I use
+
+            torchvision.transforms.ColorJitter(brightness=0, contrast=0, saturation=0, hue=0) 
+
+that randomly changes the brightness, contrast and saturation of an image.
+
+            torchvision.transforms.RandomRotation(degrees=15)
+            
+that rotates the image by angle. 
+            
+            torchvision.transforms.RandomHorizontalFlip(p=0.5) 
+            
+that  orizontally flips the given image randomly with a given probability. 
 
 
 
