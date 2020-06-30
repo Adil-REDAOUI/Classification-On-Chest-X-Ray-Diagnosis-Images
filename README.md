@@ -42,6 +42,10 @@ data:
 
 ## Model Architecture and Properties
 
+In the model, hyperparameters are chosen; batch size of 8, epoch range of 10, learning rate is chosen based on the VGGNet paper that is linked above. 
+
+The batch size of 8 is a must due to CUDA memory qualification (CUDA is out of memory). You can change it with 128 for better performance.  
+
         Layer (type)               Output Shape         Param 
             Conv2d-1          [8, 64, 224, 224]           1,792
               ReLU-2          [8, 64, 224, 224]               0
@@ -97,6 +101,16 @@ data:
         Forward/backward pass size (MB): 1750.23
         Params size (MB): 516.17
         Estimated Total Size (MB): 2270.99
+        
+## Data Preprocessing
+
+ImageNet statistics are used for normalization and rezizing. For RGB values; mean and standart deviation of training, test and validation set are chosen (0.485, 0.456, 0.406) and (0.229, 0.224, 0.225). Dataset consists of variable-resolution images, while VGGNet requires a constant input dimensionality. Therefore, dataset is down-sampled the images to a fixed resolution of 224 × 224. Given a rectangular image, first is rescaling the image such that the shorter side was of length 224, and the second is cropped out the central 256×256 patch from the resulting image.I did not pre-process the images in any other way, except for subtracting the mean activity over the training set from each pixel. So model is trained our network on the (centered) raw RGB values of the pixels. (Krizhevsky et al., 2012).
+
+## Data Augmentation
+
+I use data augmetation methods in training set to reduce overfitting on image data via artificially enlarge the dataset using label-preserving transformations (Krizhevsky et al., 2012). I use torchvision.transforms.ColorJitter(brightness=0, contrast=0, saturation=0, hue=0) that randomly changes the brightness, contrast and saturation of an image, torchvision.transforms.RandomRotation(degrees=15) that rotates the image by angle, torchvision.transforms.RandomHorizontalFlip(p=0.5) that  orizontally flips the given image randomly with a given probability. 
+
+
 
 
 
