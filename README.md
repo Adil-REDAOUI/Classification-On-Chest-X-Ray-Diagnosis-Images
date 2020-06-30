@@ -87,7 +87,7 @@ data:
            Linear-42           [8, 2]                       514
        LogSoftmax-43           [8, 2]                         0
 
-,
+
 
         Total params: 135,309,890
         Trainable params: 1,049,346
