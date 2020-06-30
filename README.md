@@ -8,3 +8,8 @@ very small (3 x 3) convolution filters, which shows that a significant improveme
 <img src="/im/vgg1.png" alt="drawing" width="500"/>
 
 <img src="/im/vgg2.png" alt="drawing" width="500"/>
+
+## Paper
+
+- abs: https://arxiv.org/abs/1409.1556
+- pdf: https://arxiv.org/pdf/1409.1556.pdf
