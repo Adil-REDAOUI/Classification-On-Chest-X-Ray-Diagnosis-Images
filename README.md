@@ -40,7 +40,7 @@ data:
   <img src="/im/freq.png" width="400" /> 
 </p>
 
-## Model Architecture
+## Model Architecture and Properties
 
         Layer (type)               Output Shape         Param 
             Conv2d-1          [8, 64, 224, 224]           1,792
