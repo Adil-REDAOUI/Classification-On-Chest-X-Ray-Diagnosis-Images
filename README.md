@@ -1,4 +1,4 @@
-# Classification on Diagnosis Chest X-Ray Images
+# Classification On Chest X-Ray Diagnosis Images
 
 ## Task
 
