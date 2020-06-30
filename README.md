@@ -37,7 +37,7 @@ data:
 
 <p float="left">
   <img src="/im/samples.png" width="600" />
-  <img src="/im/freq.png" width="600" /> 
+  <img src="/im/freq.png" width="400" /> 
 </p>
 
 
