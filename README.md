@@ -35,7 +35,7 @@ data:
         └── PNEUMONIA
 ## Samples From Training Set and Class Frequency
 
-<img src="/im/samples.png" alt="drawing" width="400"/>
+<img src="/im/samples.png" alt="drawing" width="600"/>
 
 
 
