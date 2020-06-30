@@ -122,6 +122,9 @@ that rotates the image by angle.
             
 that  orizontally flips the given image randomly with a given probability. 
 
+## Data Sharing
+
+Data is shared via drive link in /data folder. Contact safakk.bilici.2112@gmail.com if there is a access trouble.
 
 
 
