@@ -74,8 +74,7 @@ data:
            Conv2d-29           [8, 512, 14, 14]       2,359,808
              ReLU-30           [8, 512, 14, 14]               0
         MaxPool2d-31             [8, 512, 7, 7]               0
-
-AdaptiveAvgPool2d-32             [8, 512, 7, 7]               0
+           AdaptiveAvgPool2d-32             [8, 512, 7, 7]               0
            Linear-33                  [8, 4096]     102,764,544
              ReLU-34                  [8, 4096]               0
           Dropout-35                  [8, 4096]               0
