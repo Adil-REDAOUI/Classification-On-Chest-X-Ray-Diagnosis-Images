@@ -37,6 +37,8 @@ data:
 
 <img src="/im/samples.png" alt="drawing" width="600"/>
 
+<img src="/im/freq.png" alt="drawing" width="600"/>
+
 
 
 
