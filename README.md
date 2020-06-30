@@ -36,8 +36,8 @@ data:
 ## Samples From Training Set and Class Frequency
 
 <p float="left">
-  <img src="/im/samples.png" width="100" />
-  <img src="/im/freq.png" width="100" /> 
+  <img src="/im/samples.png" width="600" />
+  <img src="/im/freq.png" width="600" /> 
 </p>
 
 
