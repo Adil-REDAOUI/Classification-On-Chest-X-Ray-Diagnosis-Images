@@ -19,7 +19,7 @@ import os
 import seaborn as sns
 import pandas as pd
 
-print(os.listdir("/media/safak/Data/xray/"))
+print(os.listdir("./"))
 
 def showData(col,row,train):
     fig = plt.figure(figsize=(15,15))
@@ -48,9 +48,9 @@ if __name__=="__main__":
     EPOCHS = 10
     BATCH_SIZE = 8
     LEARNING_RATE = 0.003
-    TRAIN_DATA_PATH = "/media/safak/Data/xray/train/"
-    TEST_DATA_PATH = "/media/safak/Data/xray/test/"
-    VAL_DATA_PATH = "/media/safak/Data/xray/val/"
+    TRAIN_DATA_PATH = "./xray/train/"
+    TEST_DATA_PATH = "./xray/test/"
+    VAL_DATA_PATH = "./xray/val/"
     save_file_name = 'vgg16-chest-4.pt'
     checkpoint_path = 'vgg16-chest-4.pth'
     """
@@ -101,10 +101,10 @@ if __name__=="__main__":
     count_normal = 0
     count_pne    = 0
     
-    path, dirs, files = next(os.walk("/media/safak/Data/xray/train/NORMAL"))
+    path, dirs, files = next(os.walk("./xray/train/NORMAL"))
     count_normal      = file_count = len(files)
     
-    path, dirs, files = next(os.walk("/media/safak/Data/xray/train/PNEUMONIA"))
+    path, dirs, files = next(os.walk("./xray/train/PNEUMONIA"))
     count_pne         = file_count = len(files)
     
     barWidth  = 0.9
